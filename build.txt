@@ -1,0 +1,5 @@
+displayName = Cursor Health Display
+author = FuzzyExpress
+version = 2.0
+includeSource = true
+side = Client

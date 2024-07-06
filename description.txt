@@ -1,0 +1,30 @@
+The Cursor Health Display mod draws your health in a ring around your mouse.
+It does more than just that though, it also shows Mana, Wing Time, and Heal Potion Sickness, among other things.
+I will probably add more, feel free to suggest things to add.
+
+This mod does not change the mouse cursor itself. The cursor in the icon is the KDE Breeze cursor.
+
+Also Credits to Lan's Simple Healthbar, which I used as a template.
+
+
+Update V2.0:
+
+    Replaced Enabled with Slider for Off, Legacy, and Images
+
+
+    Images Mode:
+
+        The Cursor display ring now uses sets of images, one set for each ring, and draws it in a UI.
+        This produces a much cleaner and preformant result than drawing lines.
+        It can now also show Mana Sickness
+
+
+    For Config:
+
+        Added drop downs for Common, Images, and Legacy settings.
+
+        Dropped default for Legacy: Line Multiplyer to 0.05 instead of 0.5
+        Flipped default for Common: Force Visiblity at full health to False
+        Flipped default for Common: show heal sickness at full heath to True
+        Added config for Mana Sickenss, which defailts to True
+        Added config for Force Mana Sickness, which defaults to False

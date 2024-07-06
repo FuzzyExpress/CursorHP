@@ -1,0 +1,138 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Configs: {
+	Config: {
+		DisplayName: Mod Config
+
+		ModeEnum: {
+			Label: Ring Display Mode
+			Tooltip:
+				'''
+				Display Mode for the ring set.
+				- Off: It is what it is... (It's off)
+				- Images: The new and inproved image based ring set. Looks and preforms a lot better, but does not have a radius config.
+					> Changing Game UI Scale does not effect this.
+				- Legacy: Draws stat rings by using DrawLine() several thousand times. Looks bad. Very laggy on most GPUs.
+					> Changing Game UI Scale does not effect this, Changing camera zoom does. (This mode is not a UI)
+				'''
+		}
+
+		Legacy: {
+			Tooltip: Config for the Legacy Mode.
+			Label: Legacy
+		}
+
+		Images: {
+			Tooltip: Config for the Images Mode.
+			Label: Images
+		}
+
+		Common: {
+			Tooltip: Config settings shared by all modes.
+			Label: Common
+		}
+
+		AlphaSlider: {
+			Tooltip: Alpha of the ring set.
+			Label: Alpha Slider
+		}
+	}
+
+	LegacyConfig: {
+		RaidusOffest: {
+			Label: Pixel Offset
+			Tooltip: Changes the scale of the Rings in pixles.
+		}
+
+		LineMultiplier: {
+			Label: Line Multiplier (Lag Reducer)
+			Tooltip: Number of Lines Multiplier, Smaller = less lines = less lag.
+		}
+
+		FancyHealth: {
+			Label: Fancy Rings (Lag Reducer)
+			Tooltip: Makes Mana and Health rings be Fancy (and very laggy, not recommended)
+		}
+
+		Tooltip: Legacy Mode Config
+	}
+
+	ImagesConfig: {
+		Tooltip: Image Mode Config
+
+		Scale: {
+			Tooltip: ""
+			Label: Scale
+		}
+	}
+
+	CommonConfig: {
+		ShowMana: {
+			Label: Show Mana
+			Tooltip: Shows a blue ring for Mana.
+		}
+
+		ShowPotionSickness: {
+			Label: Show Potion Sickness
+			Tooltip: Shows the red Potion Sickness ring.
+		}
+
+		ShowPotionSicknessAtFullHealth: {
+			Label: Force Potion Sickness
+			Tooltip: Shows the Potion Sickness ring even at full HP.
+		}
+
+		ShowManaSickness: {
+			Label: Show Mana Sickness
+			Tooltip: Shows the redish-pink Mana Sickness ring.
+		}
+
+		ShowManaSicknessAtFullHealth: {
+			Label: Force Mana Sickness
+			Tooltip: Shows the Mana Sickness ring even at full Mana.
+		}
+
+		ShowFlightTime: {
+			Label: Show Flight Time
+			Tooltip: Draws a white ring to show much wing time remains (it only shows wing time, not rocket boots or similar)
+		}
+
+		RingAroundPlayer: {
+			Label: Ring Around Player
+			Tooltip: Draws the group of Rings around the player instead of the mouse.
+		}
+
+		ShowHealth: {
+			Label: Show Health
+			Tooltip: Whether or not to show the health ring.
+		}
+
+		ForceHealth: {
+			Label: Force Health
+			Tooltip: Force Health Ring to always be visible.
+		}
+
+		RodOfDiscord: {
+			Label: Chaos State
+			Tooltip: Show a magenta ring for Chaos State (Rod of Discord or similar)
+		}
+
+		BreakOnDeath: {
+			Tooltip: When you die, the ring set stops following the mouse. Behaves differently in Image and Legacy modes (only with mods like Team Spectate installed, or the camera otherwise moves).
+			Label: Break On Death
+		}
+
+		Tooltip: ""
+
+		Headers: {
+			OtherHeader: Other Settings
+			ManaHeader: Mana Settings
+			HeathHeader: Heath Settings
+		}
+
+		ShowManaSicknessAtFullMana: {
+			Tooltip: ""
+			Label: Show Mana Sickness At Full Mana
+		}
+	}
+}
